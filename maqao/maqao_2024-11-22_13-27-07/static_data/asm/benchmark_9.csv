@@ -1,0 +1,24 @@
+address;source_location;insn;indent
+0x1cf2;:0;MOV	-0x18(%RBP),%RAX;
+0x1cf6;:0;MOV	0x18(%RAX),%RAX;
+0x1cfa;:0;MOV	-0x4(%RBP),%EDX;
+0x1cfd;:0;MOVSXD	%EDX,%RDX;
+0x1d00;:0;SAL	$0x3,%RDX;
+0x1d04;:0;ADD	%RDX,%RAX;
+0x1d07;:0;MOV	(%RAX),%RAX;
+0x1d0a;:0;MOV	%RAX,%RDI;
+0x1d0d;:0;CALL	1030 <free@plt>;
+0x1d12;:0;MOV	-0x18(%RBP),%RAX;
+0x1d16;:0;MOV	0x20(%RAX),%RAX;
+0x1d1a;:0;MOV	-0x4(%RBP),%EDX;
+0x1d1d;:0;MOVSXD	%EDX,%RDX;
+0x1d20;:0;SAL	$0x3,%RDX;
+0x1d24;:0;ADD	%RDX,%RAX;
+0x1d27;:0;MOV	(%RAX),%RAX;
+0x1d2a;:0;MOV	%RAX,%RDI;
+0x1d2d;:0;CALL	1030 <free@plt>;
+0x1d32;:0;ADDL	$0x1,-0x4(%RBP);
+0x1d36;:0;MOV	-0x18(%RBP),%RAX;
+0x1d3a;:0;MOV	(%RAX),%EAX;
+0x1d3c;:0;CMP	%EAX,-0x4(%RBP);
+0x1d3f;:0;JL	1cf2 <freeGraph+0x15>;

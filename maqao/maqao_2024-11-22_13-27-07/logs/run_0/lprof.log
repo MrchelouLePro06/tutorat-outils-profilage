@@ -1,0 +1,28 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node salam
+
+* Info: Process launched (host salam, process 7093)
+* Info: Process finished (host salam, process 7093)
+* Info: Callchains info will be incomplete
+* Info: Try to recompile your application with -fno-omit-frame-pointer or to rerun with btm=stack
+* Info: Dumping samples (host salam, process 7093)
+* Info: Dumping source info for callchain nodes (host salam, process 7093)
+* Info: Building/writing metadata (host salam)
+* Info: Finished collect step (host salam, process 7093)
+
+Your experiment path is /home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0
+
+To display your profiling results:
+################################################################################################################################
+#    LEVEL    |     REPORT     |                                            COMMAND                                            #
+################################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0  #
+################################################################################################################################
+

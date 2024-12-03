@@ -1,0 +1,113 @@
+address;source_location;insn;indent
+0x1b25;:0;MOV	-0x20(%RBP),%RAX;
+0x1b29;:0;MOV	%RAX,%RDI;
+0x1b2c;:0;CALL	1299 <removeFromQueue>;
+0x1b31;:0;MOV	%EAX,-0x24(%RBP);
+0x1b34;:0;MOV	-0x24(%RBP),%EAX;
+0x1b37;:0;MOVSXD	%EAX,%RDX;
+0x1b3a;:0;MOV	-0x18(%RBP),%RAX;
+0x1b3e;:0;ADD	%RDX,%RAX;
+0x1b41;:0;MOVZX	(%RAX),%EAX;
+0x1b44;:0;TEST	%AL,%AL;
+0x1b46;:0;JE	1b4d <dijkstra+0xe6>;
+0x1b48;:0;JMP	1c90 <dijkstra+0x229>;
+0x1b4d;:0;MOV	-0x24(%RBP),%EAX;
+0x1b50;:0;MOVSXD	%EAX,%RDX;
+0x1b53;:0;MOV	-0x18(%RBP),%RAX;
+0x1b57;:0;ADD	%RDX,%RAX;
+0x1b5a;:0;MOVB	$0x1,(%RAX);
+0x1b5d;:0;MOVL	$0,-0x8(%RBP);
+0x1b64;:0;JMP	1c70 <dijkstra+0x209>;
+0x1b69;:0;MOV	-0x38(%RBP),%RAX;  (7) 
+0x1b6d;:0;MOV	0x18(%RAX),%RAX;  (7) 
+0x1b71;:0;MOV	-0x24(%RBP),%EDX;  (7) 
+0x1b74;:0;MOVSXD	%EDX,%RDX;  (7) 
+0x1b77;:0;SAL	$0x3,%RDX;  (7) 
+0x1b7b;:0;ADD	%RDX,%RAX;  (7) 
+0x1b7e;:0;MOV	(%RAX),%RAX;  (7) 
+0x1b81;:0;MOV	-0x8(%RBP),%EDX;  (7) 
+0x1b84;:0;MOVSXD	%EDX,%RDX;  (7) 
+0x1b87;:0;SAL	$0x2,%RDX;  (7) 
+0x1b8b;:0;ADD	%RDX,%RAX;  (7) 
+0x1b8e;:0;MOV	(%RAX),%EAX;  (7) 
+0x1b90;:0;MOV	%EAX,-0x28(%RBP);  (7) 
+0x1b93;:0;MOV	-0x38(%RBP),%RAX;  (7) 
+0x1b97;:0;MOV	0x20(%RAX),%RAX;  (7) 
+0x1b9b;:0;MOV	-0x24(%RBP),%EDX;  (7) 
+0x1b9e;:0;MOVSXD	%EDX,%RDX;  (7) 
+0x1ba1;:0;SAL	$0x3,%RDX;  (7) 
+0x1ba5;:0;ADD	%RDX,%RAX;  (7) 
+0x1ba8;:0;MOV	(%RAX),%RAX;  (7) 
+0x1bab;:0;MOV	-0x8(%RBP),%EDX;  (7) 
+0x1bae;:0;MOVSXD	%EDX,%RDX;  (7) 
+0x1bb1;:0;SAL	$0x2,%RDX;  (7) 
+0x1bb5;:0;ADD	%RDX,%RAX;  (7) 
+0x1bb8;:0;MOV	(%RAX),%EAX;  (7) 
+0x1bba;:0;MOV	%EAX,-0x2c(%RBP);  (7) 
+0x1bbd;:0;MOV	-0x28(%RBP),%EAX;  (7) 
+0x1bc0;:0;MOVSXD	%EAX,%RDX;  (7) 
+0x1bc3;:0;MOV	-0x18(%RBP),%RAX;  (7) 
+0x1bc7;:0;ADD	%RDX,%RAX;  (7) 
+0x1bca;:0;MOVZX	(%RAX),%EAX;  (7) 
+0x1bcd;:0;XOR	$0x1,%EAX;  (7) 
+0x1bd0;:0;TEST	%AL,%AL;  (7) 
+0x1bd2;:0;JE	1c6c <dijkstra+0x205>;  (7) 
+0x1bd8;:0;MOV	-0x24(%RBP),%EAX;  (7) 
+0x1bdb;:0;CLTQ;  (7) 
+0x1bdd;:0;LEA	(,%RAX,4),%RDX;  (7) 
+0x1be5;:0;MOV	-0x10(%RBP),%RAX;  (7) 
+0x1be9;:0;ADD	%RDX,%RAX;  (7) 
+0x1bec;:0;MOV	(%RAX),%EAX;  (7) 
+0x1bee;:0;CMP	$0x7fffffff,%EAX;  (7) 
+0x1bf3;:0;JE	1c6c <dijkstra+0x205>;  (7) 
+0x1bf5;:0;MOV	-0x24(%RBP),%EAX;  (7) 
+0x1bf8;:0;CLTQ;  (7) 
+0x1bfa;:0;LEA	(,%RAX,4),%RDX;  (7) 
+0x1c02;:0;MOV	-0x10(%RBP),%RAX;  (7) 
+0x1c06;:0;ADD	%RDX,%RAX;  (7) 
+0x1c09;:0;MOV	(%RAX),%EDX;  (7) 
+0x1c0b;:0;MOV	-0x2c(%RBP),%EAX;  (7) 
+0x1c0e;:0;ADD	%EAX,%EDX;  (7) 
+0x1c10;:0;MOV	-0x28(%RBP),%EAX;  (7) 
+0x1c13;:0;CLTQ;  (7) 
+0x1c15;:0;LEA	(,%RAX,4),%RCX;  (7) 
+0x1c1d;:0;MOV	-0x10(%RBP),%RAX;  (7) 
+0x1c21;:0;ADD	%RCX,%RAX;  (7) 
+0x1c24;:0;MOV	(%RAX),%EAX;  (7) 
+0x1c26;:0;CMP	%EAX,%EDX;  (7) 
+0x1c28;:0;JGE	1c6c <dijkstra+0x205>;  (7) 
+0x1c2a;:0;MOV	-0x24(%RBP),%EAX;  (7) 
+0x1c2d;:0;CLTQ;  (7) 
+0x1c2f;:0;LEA	(,%RAX,4),%RDX;  (7) 
+0x1c37;:0;MOV	-0x10(%RBP),%RAX;  (7) 
+0x1c3b;:0;ADD	%RDX,%RAX;  (7) 
+0x1c3e;:0;MOV	(%RAX),%ECX;  (7) 
+0x1c40;:0;MOV	-0x28(%RBP),%EAX;  (7) 
+0x1c43;:0;CLTQ;  (7) 
+0x1c45;:0;LEA	(,%RAX,4),%RDX;  (7) 
+0x1c4d;:0;MOV	-0x10(%RBP),%RAX;  (7) 
+0x1c51;:0;ADD	%RDX,%RAX;  (7) 
+0x1c54;:0;MOV	-0x2c(%RBP),%EDX;  (7) 
+0x1c57;:0;ADD	%ECX,%EDX;  (7) 
+0x1c59;:0;MOV	%EDX,(%RAX);  (7) 
+0x1c5b;:0;MOV	-0x28(%RBP),%EDX;  (7) 
+0x1c5e;:0;MOV	-0x20(%RBP),%RAX;  (7) 
+0x1c62;:0;MOV	%EDX,%ESI;  (7) 
+0x1c64;:0;MOV	%RAX,%RDI;  (7) 
+0x1c67;:0;CALL	1264 <addToQueue>;  (7) 
+0x1c6c;:0;ADDL	$0x1,-0x8(%RBP);  (7) 
+0x1c70;:0;MOV	-0x38(%RBP),%RAX;  (7) 
+0x1c74;:0;MOV	0x8(%RAX),%RAX;  (7) 
+0x1c78;:0;MOV	-0x24(%RBP),%EDX;  (7) 
+0x1c7b;:0;MOVSXD	%EDX,%RDX;  (7) 
+0x1c7e;:0;SAL	$0x2,%RDX;  (7) 
+0x1c82;:0;ADD	%RDX,%RAX;  (7) 
+0x1c85;:0;MOV	(%RAX),%EAX;  (7) 
+0x1c87;:0;CMP	%EAX,-0x8(%RBP);  (7) 
+0x1c8a;:0;JL	1b69 <dijkstra+0x102>;  (7) 
+0x1c90;:0;MOV	-0x20(%RBP),%RAX;
+0x1c94;:0;MOV	%RAX,%RDI;
+0x1c97;:0;CALL	124e <isEmpty>;
+0x1c9c;:0;XOR	$0x1,%EAX;
+0x1c9f;:0;TEST	%AL,%AL;
+0x1ca1;:0;JNE	1b25 <dijkstra+0xbe>;

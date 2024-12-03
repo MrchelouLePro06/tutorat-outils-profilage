@@ -1,0 +1,39 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 97.91      1.35     1.35        2   675.58   675.58  createWandRFile
+  2.18      1.38     0.03                             _init
+  0.00      1.38     0.00        2     0.00     0.00  removeFile
+  0.00      1.38     0.00        1     0.00     0.00  initialiserMatrices
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 0.72% of 1.38 seconds
+
+index % time    self  children    called     name
+                1.35    0.00       2/2           main [2]
+[1]     97.8    1.35    0.00       2         createWandRFile [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     97.8    0.00    1.35                 main [2]
+                1.35    0.00       2/2           createWandRFile [1]
+                0.00    0.00       2/2           removeFile [4]
+                0.00    0.00       1/1           initialiserMatrices [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]      2.2    0.03    0.00                 _init [3]
+-----------------------------------------------
+                0.00    0.00       2/2           main [2]
+[4]      0.0    0.00    0.00       2         removeFile [4]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[5]      0.0    0.00    0.00       1         initialiserMatrices [5]
+-----------------------------------------------
+
+Index by function name
+
+   [3] _init                   [5] initialiserMatrices
+   [1] createWandRFile         [4] removeFile

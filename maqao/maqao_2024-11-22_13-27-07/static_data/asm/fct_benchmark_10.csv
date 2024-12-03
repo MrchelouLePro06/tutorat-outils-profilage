@@ -1,0 +1,86 @@
+address;source_location;insn;indent
+0x12e8;:0;PUSH	%RBP;
+0x12e9;:0;MOV	%RSP,%RBP;
+0x12ec;:0;PUSH	%RBX;
+0x12ed;:0;SUB	$0x28,%RSP;
+0x12f1;:0;MOV	%EDI,-0x24(%RBP);
+0x12f4;:0;MOV	$0x28,%EDI;
+0x12f9;:0;CALL	10b0 <malloc@plt>;
+0x12fe;:0;MOV	%RAX,-0x20(%RBP);
+0x1302;:0;MOV	-0x20(%RBP),%RAX;
+0x1306;:0;MOV	-0x24(%RBP),%EDX;
+0x1309;:0;MOV	%EDX,(%RAX);
+0x130b;:0;MOV	-0x24(%RBP),%EAX;
+0x130e;:0;CLTQ;
+0x1310;:0;SAL	$0x3,%RAX;
+0x1314;:0;MOV	%RAX,%RDI;
+0x1317;:0;CALL	10b0 <malloc@plt>;
+0x131c;:0;MOV	%RAX,%RDX;
+0x131f;:0;MOV	-0x20(%RBP),%RAX;
+0x1323;:0;MOV	%RDX,0x18(%RAX);
+0x1327;:0;MOV	-0x24(%RBP),%EAX;
+0x132a;:0;CLTQ;
+0x132c;:0;SAL	$0x2,%RAX;
+0x1330;:0;MOV	%RAX,%RDI;
+0x1333;:0;CALL	10b0 <malloc@plt>;
+0x1338;:0;MOV	%RAX,%RDX;
+0x133b;:0;MOV	-0x20(%RBP),%RAX;
+0x133f;:0;MOV	%RDX,0x8(%RAX);
+0x1343;:0;MOV	-0x24(%RBP),%EAX;
+0x1346;:0;CLTQ;
+0x1348;:0;SAL	$0x3,%RAX;
+0x134c;:0;MOV	%RAX,%RDI;
+0x134f;:0;CALL	10b0 <malloc@plt>;
+0x1354;:0;MOV	%RAX,%RDX;
+0x1357;:0;MOV	-0x20(%RBP),%RAX;
+0x135b;:0;MOV	%RDX,0x10(%RAX);
+0x135f;:0;MOV	-0x24(%RBP),%EAX;
+0x1362;:0;CLTQ;
+0x1364;:0;SAL	$0x3,%RAX;
+0x1368;:0;MOV	%RAX,%RDI;
+0x136b;:0;CALL	10b0 <malloc@plt>;
+0x1370;:0;MOV	%RAX,%RDX;
+0x1373;:0;MOV	-0x20(%RBP),%RAX;
+0x1377;:0;MOV	%RDX,0x20(%RAX);
+0x137b;:0;MOVL	$0,-0x14(%RBP);
+0x1382;:0;JMP	1407 <createGraph+0x11f>;
+0x1387;:0;MOV	-0x20(%RBP),%RAX;(0) 
+0x138b;:0;MOV	0x18(%RAX),%RAX;(0) 
+0x138f;:0;MOV	-0x14(%RBP),%EDX;(0) 
+0x1392;:0;MOVSXD	%EDX,%RDX;(0) 
+0x1395;:0;SAL	$0x3,%RDX;(0) 
+0x1399;:0;LEA	(%RAX,%RDX,1),%RBX;(0) 
+0x139d;:0;MOV	$0x10,%EDI;(0) 
+0x13a2;:0;CALL	10b0 <malloc@plt>;(0) 
+0x13a7;:0;MOV	%RAX,(%RBX);(0) 
+0x13aa;:0;MOV	-0x20(%RBP),%RAX;(0) 
+0x13ae;:0;MOV	0x20(%RAX),%RAX;(0) 
+0x13b2;:0;MOV	-0x14(%RBP),%EDX;(0) 
+0x13b5;:0;MOVSXD	%EDX,%RDX;(0) 
+0x13b8;:0;SAL	$0x3,%RDX;(0) 
+0x13bc;:0;LEA	(%RAX,%RDX,1),%RBX;(0) 
+0x13c0;:0;MOV	$0x10,%EDI;(0) 
+0x13c5;:0;CALL	10b0 <malloc@plt>;(0) 
+0x13ca;:0;MOV	%RAX,(%RBX);(0) 
+0x13cd;:0;MOV	-0x20(%RBP),%RAX;(0) 
+0x13d1;:0;MOV	0x8(%RAX),%RAX;(0) 
+0x13d5;:0;MOV	-0x14(%RBP),%EDX;(0) 
+0x13d8;:0;MOVSXD	%EDX,%RDX;(0) 
+0x13db;:0;SAL	$0x2,%RDX;(0) 
+0x13df;:0;ADD	%RDX,%RAX;(0) 
+0x13e2;:0;MOVL	$0,(%RAX);(0) 
+0x13e8;:0;MOV	-0x20(%RBP),%RAX;(0) 
+0x13ec;:0;MOV	0x10(%RAX),%RAX;(0) 
+0x13f0;:0;MOV	-0x14(%RBP),%EDX;(0) 
+0x13f3;:0;MOVSXD	%EDX,%RDX;(0) 
+0x13f6;:0;SAL	$0x2,%RDX;(0) 
+0x13fa;:0;ADD	%RDX,%RAX;(0) 
+0x13fd;:0;MOVL	$0x4,(%RAX);(0) 
+0x1403;:0;ADDL	$0x1,-0x14(%RBP);(0) 
+0x1407;:0;MOV	-0x14(%RBP),%EAX;(0) 
+0x140a;:0;CMP	-0x24(%RBP),%EAX;(0) 
+0x140d;:0;JL	1387 <createGraph+0x9f>;(0) 
+0x1413;:0;MOV	-0x20(%RBP),%RAX;
+0x1417;:0;MOV	-0x8(%RBP),%RBX;
+0x141b;:0;LEAVE;
+0x141c;:0;RET;

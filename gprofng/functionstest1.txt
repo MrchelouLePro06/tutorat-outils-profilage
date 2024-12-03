@@ -1,0 +1,64 @@
+Functions sorted by metric: Exclusive Total CPU Time
+
+Excl. Total    Incl. Total     Name
+CPU            CPU
+  sec.      %    sec.      %
+22.206 100.00  22.206 100.00   <Total>
+14.170  63.81  14.170  63.81   multMatrice
+ 1.691   7.62   2.632  11.85   fgets
+ 0.891   4.01   2.222  10.00   <static>@0x595e7 (<libc.so.6>)
+ 0.751   3.38   1.941   8.74   generateRandomGraph
+ 0.721   3.24   0.721   3.24   write
+ 0.530   2.39   0.530   2.39   <static>@0x151f2d (<libc.so.6>)
+ 0.480   2.16   0.931   4.19   _IO_getline_info
+ 0.460   2.07   0.510   2.30   random
+ 0.310   1.40   0.660   2.97   addEdge
+ 0.280   1.26   0.280   1.26   unlink
+ 0.240   1.08   0.360   1.62   <static>@0x96033 (<libc.so.6>)
+ 0.240   1.08   1.151   5.18   _IO_file_xsputn
+ 0.240   1.08   0.240   1.08   open
+ 0.120   0.54   0.130   0.59   dijkstra
+ 0.110   0.50   0.110   0.50   <static>@0x944d0 (<libc.so.6>)
+ 0.110   0.50   5.444  24.52   createWandRFile
+ 0.090   0.41   0.090   0.41   read
+ 0.080   0.36   0.080   0.36   <static>@0x154fbc (<libc.so.6>) --  no functions found
+ 0.080   0.36   0.080   0.36   <static>@0x51536 (<libc.so.6>)
+ 0.080   0.36   0.080   0.36   __close_nocancel
+ 0.080   0.36   0.350   1.58   realloc
+ 0.060   0.27   2.232  10.05   fprintf
+ 0.050   0.23   0.060   0.27   bfs
+ 0.050   0.23   0.050   0.23   feof
+ 0.050   0.23   0.050   0.23   fstatat
+ 0.050   0.23   0.050   0.23   random_r
+ 0.030   0.14   0.030   0.14   <static>@0x85e41 (<libc.so.6>)
+ 0.020   0.09   0.020   0.09   _IO_default_xsputn
+ 0.020   0.09   0.070   0.32   freeGraph
+ 0.020   0.09   0.530   2.39   rand
+ 0.010   0.05   0.010   0.05   <static>@0x154fbc (<libc.so.6>) --  no functions found
+ 0.010   0.05   0.741   3.33   <static>@0x802b8 (<libc.so.6>)
+ 0.010   0.05   0.731   3.29   _IO_file_write
+ 0.010   0.05   0.010   0.05   _IO_getline
+ 0.010   0.05   0.010   0.05   _IO_switch_to_get_mode
+ 0.010   0.05   0.010   0.05   __uflow
+ 0.010   0.05   0.010   0.05   addToQueue
+ 0.010   0.05   0.010   0.05   malloc
+ 0.010   0.05   0.290   1.31   removeFile
+ 0.010   0.05   0.010   0.05   removeFromQueue
+ 0.      0.    22.115  99.59   <static>@0x271c1 (<libc.so.6>)
+ 0.      0.     0.240   1.08   <static>@0x76192 (<libc.so.6>)
+ 0.      0.     0.130   0.59   _IO_default_uflow
+ 0.      0.     0.741   3.33   _IO_do_write
+ 0.      0.     0.050   0.23   _IO_doallocbuf
+ 0.      0.     0.180   0.81   _IO_file_close_it
+ 0.      0.     0.050   0.23   _IO_file_doallocate
+ 0.      0.     0.240   1.08   _IO_file_fopen
+ 0.      0.     0.240   1.08   _IO_file_open
+ 0.      0.     0.020   0.09   _IO_file_overflow
+ 0.      0.     0.130   0.59   _IO_file_underflow
+ 0.      0.     0.020   0.09   _IO_setb
+ 0.      0.     0.010   0.05   createGraph
+ 0.      0.     0.180   0.81   fclose
+ 0.      0.     0.070   0.32   free
+ 0.      0.    22.115  99.59   main
+ 0.      0.     0.280   1.26   remove
+

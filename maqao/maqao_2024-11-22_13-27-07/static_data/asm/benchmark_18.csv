@@ -1,0 +1,11 @@
+address;source_location;insn;indent
+0x2090;:0;MOV	-0x8(%RBP),%EDX;
+0x2093;:0;MOV	-0x28(%RBP),%RAX;
+0x2097;:0;LEA	0xf8e(%RIP),%RCX;
+0x209e;:0;MOV	%RCX,%RSI;
+0x20a1;:0;MOV	%RAX,%RDI;
+0x20a4;:0;MOV	$0,%EAX;
+0x20a9;:0;CALL	1080 <fprintf@plt>;
+0x20ae;:0;ADDL	$0x1,-0x8(%RBP);
+0x20b2;:0;CMPL	$0x3e7,-0x8(%RBP);
+0x20b9;:0;JLE	2090 <createWandRFile+0x73>;

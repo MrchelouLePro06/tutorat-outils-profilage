@@ -1,0 +1,52 @@
+address;source_location;insn;indent
+0x1cdd;:0;PUSH	%RBP;
+0x1cde;:0;MOV	%RSP,%RBP;
+0x1ce1;:0;SUB	$0x20,%RSP;
+0x1ce5;:0;MOV	%RDI,-0x18(%RBP);
+0x1ce9;:0;MOVL	$0,-0x4(%RBP);
+0x1cf0;:0;JMP	1d36 <freeGraph+0x59>;
+0x1cf2;:0;MOV	-0x18(%RBP),%RAX;(9) 
+0x1cf6;:0;MOV	0x18(%RAX),%RAX;(9) 
+0x1cfa;:0;MOV	-0x4(%RBP),%EDX;(9) 
+0x1cfd;:0;MOVSXD	%EDX,%RDX;(9) 
+0x1d00;:0;SAL	$0x3,%RDX;(9) 
+0x1d04;:0;ADD	%RDX,%RAX;(9) 
+0x1d07;:0;MOV	(%RAX),%RAX;(9) 
+0x1d0a;:0;MOV	%RAX,%RDI;(9) 
+0x1d0d;:0;CALL	1030 <free@plt>;(9) 
+0x1d12;:0;MOV	-0x18(%RBP),%RAX;(9) 
+0x1d16;:0;MOV	0x20(%RAX),%RAX;(9) 
+0x1d1a;:0;MOV	-0x4(%RBP),%EDX;(9) 
+0x1d1d;:0;MOVSXD	%EDX,%RDX;(9) 
+0x1d20;:0;SAL	$0x3,%RDX;(9) 
+0x1d24;:0;ADD	%RDX,%RAX;(9) 
+0x1d27;:0;MOV	(%RAX),%RAX;(9) 
+0x1d2a;:0;MOV	%RAX,%RDI;(9) 
+0x1d2d;:0;CALL	1030 <free@plt>;(9) 
+0x1d32;:0;ADDL	$0x1,-0x4(%RBP);(9) 
+0x1d36;:0;MOV	-0x18(%RBP),%RAX;(9) 
+0x1d3a;:0;MOV	(%RAX),%EAX;(9) 
+0x1d3c;:0;CMP	%EAX,-0x4(%RBP);(9) 
+0x1d3f;:0;JL	1cf2 <freeGraph+0x15>;(9) 
+0x1d41;:0;MOV	-0x18(%RBP),%RAX;
+0x1d45;:0;MOV	0x18(%RAX),%RAX;
+0x1d49;:0;MOV	%RAX,%RDI;
+0x1d4c;:0;CALL	1030 <free@plt>;
+0x1d51;:0;MOV	-0x18(%RBP),%RAX;
+0x1d55;:0;MOV	0x20(%RAX),%RAX;
+0x1d59;:0;MOV	%RAX,%RDI;
+0x1d5c;:0;CALL	1030 <free@plt>;
+0x1d61;:0;MOV	-0x18(%RBP),%RAX;
+0x1d65;:0;MOV	0x8(%RAX),%RAX;
+0x1d69;:0;MOV	%RAX,%RDI;
+0x1d6c;:0;CALL	1030 <free@plt>;
+0x1d71;:0;MOV	-0x18(%RBP),%RAX;
+0x1d75;:0;MOV	0x10(%RAX),%RAX;
+0x1d79;:0;MOV	%RAX,%RDI;
+0x1d7c;:0;CALL	1030 <free@plt>;
+0x1d81;:0;MOV	-0x18(%RBP),%RAX;
+0x1d85;:0;MOV	%RAX,%RDI;
+0x1d88;:0;CALL	1030 <free@plt>;
+0x1d8d;:0;NOP;
+0x1d8e;:0;LEAVE;
+0x1d8f;:0;RET;

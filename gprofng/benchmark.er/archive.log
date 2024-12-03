@@ -1,0 +1,6 @@
+### Start Thu Nov 21 17:21:45 2024
+# /usr/bin/gp-archive -n -a on --outfile /home/mehdi/tutorat/test.1.er/archive.log /home/mehdi/tutorat/test.1.er
+Copying `/home/mehdi/tutorat/benchmark'  to `/home/mehdi/tutorat/test.1.er/archives/benchmark_HrdZuvFWQ84'
+Copying `/usr/lib/x86_64-linux-gnu/libc.so.6'  to `/home/mehdi/tutorat/test.1.er/archives/libc.so.6_dnWuQRcLhw9'
+Copying `/usr/lib/x86_64-linux-gnu/gprofng/libgp-collector.so'  to `/home/mehdi/tutorat/test.1.er/archives/libgp-collector.so_1doggXvug9f'
+Copying `/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2'  to `/home/mehdi/tutorat/test.1.er/archives/ld-linux-x86-64.so.2_dnWuQRcLhw9'

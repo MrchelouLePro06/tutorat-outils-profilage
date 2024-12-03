@@ -1,0 +1,178 @@
+gcc -pg tp1_benchmark.c -o tp1
+gprof -b tp1 gmon.out > profilage_tp1.txt
+
+res : 
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 98.55    161.91   161.91       34     4.76     4.76  multMatrice
+  1.40    164.20     2.29       38     0.06     0.06  createWandRFile
+  0.09    164.34     0.14                             _init
+  0.08    164.47     0.13       28     0.00     0.00  add
+  0.01    164.49     0.02        1     0.02     0.02  initialiserMatrices
+  0.01    164.50     0.01       38     0.00     0.00  removeFile
+
+remarque : multiplication de matrice prend le plus de temps et de ressource.
+
+
+Meme commande avec l'ajout bfs pour 100 itération aléatoire:
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 97.32     86.37    86.37       16     5.40     5.40  multMatrice
+  1.92     88.07     1.70       24     0.07     0.07  createWandRFile
+  0.38     88.41     0.34       23     0.01     0.02  generateRandomGraph
+  0.23     88.61     0.20       37     0.01     0.01  add
+  0.11     88.71     0.10                             _init
+  0.08     88.79     0.08  4600000     0.00     0.00  addEdge
+  0.03     88.82     0.03       23     0.00     0.00  bfs
+  0.01     88.83     0.01       24     0.00     0.00  removeFile
+  0.01     88.83     0.01       23     0.00     0.00  createGraph
+  0.00     88.83     0.00   453005     0.00     0.00  isEmpty
+  0.00     88.83     0.00   226491     0.00     0.00  add2queue
+  0.00     88.83     0.00   226491     0.00     0.00  remove2queue
+  0.00     88.83     0.00       23     0.00     0.00  createQueue
+  0.00     88.83     0.00       23     0.00     0.00  freeGraph
+  0.00     88.83     0.00        1     0.00     0.00  initialiserMatrices
+
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 0.01% of 88.83 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.9    0.00   88.73                 main [1]
+               86.37    0.00      16/16          multMatrice [2]
+                1.70    0.00      24/24          createWandRFile [3]
+                0.34    0.08      23/23          generateRandomGraph [4]
+                0.20    0.00      37/37          add [5]
+                0.03    0.00      23/23          bfs [8]
+                0.01    0.00      24/24          removeFile [9]
+                0.01    0.00      23/23          createGraph [10]
+                0.00    0.00      23/23          freeGraph [15]
+                0.00    0.00       1/1           initialiserMatrices [16]
+-----------------------------------------------
+               86.37    0.00      16/16          main [1]
+[2]     97.2   86.37    0.00      16         multMatrice [2]
+-----------------------------------------------
+                1.70    0.00      24/24          main [1]
+[3]      1.9    1.70    0.00      24         createWandRFile [3]
+-----------------------------------------------
+                0.34    0.08      23/23          main [1]
+[4]      0.5    0.34    0.08      23         generateRandomGraph [4]
+                0.08    0.00 4600000/4600000     addEdge [7]
+-----------------------------------------------
+                0.20    0.00      37/37          main [1]
+[5]      0.2    0.20    0.00      37         add [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      0.1    0.10    0.00                 _init [6]
+-----------------------------------------------
+                0.08    0.00 4600000/4600000     generateRandomGraph [4]
+[7]      0.1    0.08    0.00 4600000         addEdge [7]
+-----------------------------------------------
+                0.03    0.00      23/23          main [1]
+[8]      0.0    0.03    0.00      23         bfs [8]
+                0.00    0.00  226514/453005      isEmpty [11]
+                0.00    0.00  226491/226491      add2queue [12]
+                0.00    0.00  226491/226491      remove2queue [13]
+                0.00    0.00      23/23          createQueue [14]
+-----------------------------------------------
+                0.01    0.00      24/24          main [1]
+[9]      0.0    0.01    0.00      24         removeFile [9]
+-----------------------------------------------
+                0.01    0.00      23/23          main [1]
+[10]     0.0    0.01    0.00      23         createGraph [10]
+-----------------------------------------------
+                0.00    0.00  226491/453005      remove2queue [13]
+                0.00    0.00  226514/453005      bfs [8]
+[11]     0.0    0.00    0.00  453005         isEmpty [11]
+-----------------------------------------------
+                0.00    0.00  226491/226491      bfs [8]
+[12]     0.0    0.00    0.00  226491         add2queue [12]
+-----------------------------------------------
+                0.00    0.00  226491/226491      bfs [8]
+[13]     0.0    0.00    0.00  226491         remove2queue [13]
+                0.00    0.00  226491/453005      isEmpty [11]
+-----------------------------------------------
+                0.00    0.00      23/23          bfs [8]
+[14]     0.0    0.00    0.00      23         createQueue [14]
+-----------------------------------------------
+                0.00    0.00      23/23          main [1]
+[15]     0.0    0.00    0.00      23         freeGraph [15]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[16]     0.0    0.00    0.00       1         initialiserMatrices [16]
+-----------------------------------------------
+
+
+Index by function name
+
+   [6] _init                  [10] createGraph            [16] initialiserMatrices
+   [5] add                    [14] createQueue            [11] isEmpty
+  [12] add2queue               [3] createWandRFile         [2] multMatrice
+   [7] addEdge                [15] freeGraph              [13] remove2queue
+   [8] bfs                     [4] generateRandomGraph     [9] removeFile
+
+remarque : toujours la meme chose, multMatrice très long
+Résultat avec option d'optimisation -O1 :On a une réduction drastique du temps de calcul
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 90.57     19.88    19.88       22   903.67   903.67  multMatrice
+  5.56     21.10     1.22       23    53.10    53.10  createWandRFile
+  1.46     21.42     0.32                             _init
+  0.96     21.63     0.21       46     4.57     8.92  generateRandomGraph
+  0.91     21.83     0.20  9200000     0.00     0.00  addEdge
+  0.27     21.89     0.06       23     2.61     2.61  dijkstra
+  0.27     21.95     0.06       32     1.88     1.88  add
+  0.09     21.97     0.02       23     0.87     0.87  bfs
+  0.00     21.97     0.00   461613     0.00     0.00  addToQueue
+  0.00     21.97     0.00   461613     0.00     0.00  removeFromQueue
+  0.00     21.97     0.00       46     0.00     0.00  createGraph
+  0.00     21.97     0.00       46     0.00     0.00  createQueue
+  0.00     21.97     0.00       46     0.00     0.00  freeGraph
+  0.00     21.97     0.00       23     0.00     0.00  removeFile
+  0.00     21.97     0.00        1     0.00     0.00  initialiserMatrices
+
+Vtune : 
+vtune -collect hotspots -r profilagevtune -- ./tp1
+vtune -report summary -r profilagevtune
+
+vtune: Executing actions 75 % Generating a report                              				Elapsed Time 60.380s
+    CPU Time: 60.350s
+        Effective Time: 60.350s
+        Spin Time: 0s
+        Overhead Time: 0s
+    Total Thread Count: 1
+    Paused Time: 0s
+
+Top Hotspots
+Function             Module     CPU Time  % of CPU Time(%)
+-------------------  ---------  --------  ----------------
+multMatrice          tp1         41.768s             69.2%
+_IO_fprintf          libc.so.6    6.274s             10.4%
+fgets                libc.so.6    5.914s              9.8%
+rand                 libc.so.6    1.050s              1.7%
+generateRandomGraph  tp1          1.048s              1.7%
+[Others]             N/A          4.296s              7.1%
+Collection and Platform Info
+    Application Command Line: ./tp1 
+    Operating System: 6.1.0-26-amd64 12.7
+    Computer Name: salam
+    Result Size: 5,0 MB 
+    Collection start time: 18:49:22 25/10/2024 UTC
+    Collection stop time: 18:50:22 25/10/2024 UTC
+    Collector Type: User-mode sampling and tracing
+    CPU
+        Name: Intel(R) microarchitecture code named Cometlake H/S
+        Frequency: 2.904 GHz
+        Logical CPU Count: 16
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: not detected
+vtune: Executing actions 100 % done

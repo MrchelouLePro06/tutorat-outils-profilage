@@ -1,0 +1,18 @@
+ID;Module;Source Location;Source Function;Level;Max Time Over Threads (s);Time w.r.t. Wall Time (s);Coverage (% app. time);Speedup if no scalar integer;Speedup if FP arith vectorized;Speedup if fully vectorized;Speedup if FP only;Number of paths;Vectorization Ratio (%);Vectorization Efficiency (%);CQA cycles;CQA cycles if no scalar integer;CQA cycles if FP arith vectorized;CQA cycles if fully vectorized;CQA cycles if FP only
+Loop 12;benchmark;;multMatrice;Innermost;91.39;91.39;62.57;1.00;1.00;7.29;21.00;1;0.00;18.75;10.50;10.50;10.50;1.44;0.50
+Loop 2;benchmark;;generateRandomGraph;Innermost;7.23;7.23;4.95;1.00;1.00;7.70;4.33;1;0.00;19.32;6.50;6.50;6.50;0.84;1.50
+Loop 7;benchmark;;dijkstra;Innermost;1.3;1.3;0.89;1.00;1.00;7.17;3.15;4;0.00;19.30;15.75;15.75;15.75;2.20;5.00
+Loop 1;benchmark;;generateRandomGraph;Outermost;0.89;0.89;0.61;1.00;1.00;5.39;5.71;3;0.00;12.16;16.17;16.17;16.17;3.00;2.83
+Loop 20;benchmark;;createWandRFile;Innermost;0.88;0.88;0.6;1.00;1.00;7.27;5.50;1;0.00;21.88;2.75;2.75;2.75;0.38;0.50
+Loop 4;benchmark;;bfs;Innermost;0.74;0.74;0.51;1.00;1.00;7.12;3.36;2;0.00;18.99;9.25;9.25;9.25;1.30;2.75
+Loop 18;benchmark;;createWandRFile;Innermost;0.28;0.28;0.19;1.00;1.00;7.27;6.00;1;0.00;18.75;3.00;3.00;3.00;0.41;0.50
+Loop 13;benchmark;;multMatrice;InBetween;0.09;0.09;0.06;1.00;1.00;8.00;3.00;2;0.00;12.50;1.50;1.50;1.50;0.19;0.50
+Loop 16;benchmark;;add;Innermost;0.08;0.08;0.05;1.00;1.00;6.88;19.00;1;0.00;19.02;9.50;9.50;9.50;1.38;0.50
+Loop 8;benchmark;;dijkstra;Outermost;0.05;0.05;0.04;1.00;1.00;18.91;6.50;5;0.00;18.30;6.50;6.50;6.50;0.34;1.00
+Loop 9;benchmark;;freeGraph;Single;0.02;0.03;0.02;1.00;1.00;7.36;6.25;1;0.00;20.83;6.25;6.25;6.25;0.85;1.00
+Loop 5;benchmark;;bfs;Outermost;0.02;0.02;0.01;1.00;1.00;7.99;8.67;3;0.00;18.75;4.33;4.33;4.33;0.54;0.50
+Loop 6;benchmark;;dijkstra;Single;0.01;0.01;0.01;1.00;1.00;14.22;2.00;1;0.00;15.63;4.00;4.00;4.00;0.28;2.00
+Loop 3;benchmark;;bfs;Single;0.01;0.01;0.01;1.00;1.00;8.00;2.00;1;0.00;16.67;3.00;3.00;3.00;0.38;1.50
+Loop 0;benchmark;;createGraph;Single;0.01;0.01;0.01;1.00;1.00;7.58;9.50;1;0.00;16.07;9.50;9.50;9.50;1.25;1.00
+Loop 19;benchmark;;createWandRFile;Outermost;0;0;0;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+Loop 22;benchmark;;removeFile;Single;0;0;0;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA

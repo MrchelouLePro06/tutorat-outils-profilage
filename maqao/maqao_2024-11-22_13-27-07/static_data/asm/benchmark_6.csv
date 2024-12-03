@@ -1,0 +1,17 @@
+address;source_location;insn;indent
+0x1abc;:0;MOV	-0x4(%RBP),%EAX;
+0x1abf;:0;CLTQ;
+0x1ac1;:0;LEA	(,%RAX,4),%RDX;
+0x1ac9;:0;MOV	-0x10(%RBP),%RAX;
+0x1acd;:0;ADD	%RDX,%RAX;
+0x1ad0;:0;MOVL	$0x7fffffff,(%RAX);
+0x1ad6;:0;MOV	-0x4(%RBP),%EAX;
+0x1ad9;:0;MOVSXD	%EAX,%RDX;
+0x1adc;:0;MOV	-0x18(%RBP),%RAX;
+0x1ae0;:0;ADD	%RDX,%RAX;
+0x1ae3;:0;MOVB	$0,(%RAX);
+0x1ae6;:0;ADDL	$0x1,-0x4(%RBP);
+0x1aea;:0;MOV	-0x38(%RBP),%RAX;
+0x1aee;:0;MOV	(%RAX),%EAX;
+0x1af0;:0;CMP	%EAX,-0x4(%RBP);
+0x1af3;:0;JL	1abc <dijkstra+0x55>;

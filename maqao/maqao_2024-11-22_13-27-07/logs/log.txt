@@ -1,0 +1,16 @@
+********************************************************************************
+MAQAO 2.20.1 - cf6e61a781c49dfcbeaded3d28e83d3212ea2c5e::20240418-162820 || 2024/04/18
+maqao/maqao.x86_64.2.20.1/bin/maqao oneview -R1 -- ./benchmark 
+CPY:  [true] ./benchmark --> /home/mehdi/tutorat/maqao_2024-11-22_13-27-07/binaries/benchmark
+CMD:   /home/mehdi/tutorat/maqao/maqao.x86_64.2.20.1/bin/maqao lprof  --xp="/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/mehdi/tutorat/maqao_2024-11-22_13-27-07/binaries/benchmark 
+In run run_0, 2 loops were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+8 functions were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+CMD:  /home/mehdi/tutorat/maqao/maqao.x86_64.2.20.1/bin/maqao otter  -input=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/OTTER/input_manifest.csv -output=/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/OTTER/output_manifest.csv

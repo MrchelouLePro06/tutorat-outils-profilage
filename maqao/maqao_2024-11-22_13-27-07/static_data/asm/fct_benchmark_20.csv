@@ -1,0 +1,92 @@
+address;source_location;insn;indent
+0x201d;:0;PUSH	%RBP;
+0x201e;:0;MOV	%RSP,%RBP;
+0x2021;:0;SUB	$0x70,%RSP;
+0x2025;:0;MOV	%EDI,-0x64(%RBP);
+0x2028;:0;MOVL	$0x1,-0x4(%RBP);
+0x202f;:0;JMP	20cb <createWandRFile+0xae>;
+0x2034;:0;MOV	-0x4(%RBP),%EDX;(19) 
+0x2037;:0;LEA	-0x60(%RBP),%RAX;(19) 
+0x203b;:0;LEA	0xfc2(%RIP),%RCX;(19) 
+0x2042;:0;MOV	%RCX,%RSI;(19) 
+0x2045;:0;MOV	%RAX,%RDI;(19) 
+0x2048;:0;MOV	$0,%EAX;(19) 
+0x204d;:0;CALL	10f0 <sprintf@plt>;(19) 
+0x2052;:0;LEA	-0x60(%RBP),%RAX;(19) 
+0x2056;:0;LEA	0xfba(%RIP),%RDX;(19) 
+0x205d;:0;MOV	%RDX,%RSI;(19) 
+0x2060;:0;MOV	%RAX,%RDI;(19) 
+0x2063;:0;CALL	10d0 <fopen@plt>;(19) 
+0x2068;:0;MOV	%RAX,-0x28(%RBP);(19) 
+0x206c;:0;CMPQ	$0,-0x28(%RBP);(19) 
+0x2071;:0;JNE	2087 <createWandRFile+0x6a>;(19) 
+0x2073;:0;LEA	0xf9f(%RIP),%RAX;
+0x207a;:0;MOV	%RAX,%RDI;
+0x207d;:0;CALL	10e0 <perror@plt>;
+0x2082;:0;JMP	2190 <createWandRFile+0x173>;
+0x2087;:0;MOVL	$0,-0x8(%RBP);(19) 
+0x208e;:0;JMP	20b2 <createWandRFile+0x95>;(19) 
+0x2090;:0;MOV	-0x8(%RBP),%EDX;  (18) 
+0x2093;:0;MOV	-0x28(%RBP),%RAX;  (18) 
+0x2097;:0;LEA	0xf8e(%RIP),%RCX;  (18) 
+0x209e;:0;MOV	%RCX,%RSI;  (18) 
+0x20a1;:0;MOV	%RAX,%RDI;  (18) 
+0x20a4;:0;MOV	$0,%EAX;  (18) 
+0x20a9;:0;CALL	1080 <fprintf@plt>;  (18) 
+0x20ae;:0;ADDL	$0x1,-0x8(%RBP);  (18) 
+0x20b2;:0;CMPL	$0x3e7,-0x8(%RBP);  (18) 
+0x20b9;:0;JLE	2090 <createWandRFile+0x73>;  (18) 
+0x20bb;:0;MOV	-0x28(%RBP),%RAX;(19) 
+0x20bf;:0;MOV	%RAX,%RDI;(19) 
+0x20c2;:0;CALL	1050 <fclose@plt>;(19) 
+0x20c7;:0;ADDL	$0x1,-0x4(%RBP);(19) 
+0x20cb;:0;MOV	-0x4(%RBP),%EAX;(19) 
+0x20ce;:0;CMP	-0x64(%RBP),%EAX;(19) 
+0x20d1;:0;JLE	2034 <createWandRFile+0x17>;(19) 
+0x20d7;:0;MOVL	$0x1,-0xc(%RBP);
+0x20de;:0;JMP	2184 <createWandRFile+0x167>;
+0x20e3;:0;MOV	-0xc(%RBP),%EDX;(21) 
+0x20e6;:0;LEA	-0x60(%RBP),%RAX;(21) 
+0x20ea;:0;LEA	0xf13(%RIP),%RCX;(21) 
+0x20f1;:0;MOV	%RCX,%RSI;(21) 
+0x20f4;:0;MOV	%RAX,%RDI;(21) 
+0x20f7;:0;MOV	$0,%EAX;(21) 
+0x20fc;:0;CALL	10f0 <sprintf@plt>;(21) 
+0x2101;:0;LEA	-0x60(%RBP),%RAX;(21) 
+0x2105;:0;LEA	0xf3c(%RIP),%RDX;(21) 
+0x210c;:0;MOV	%RDX,%RSI;(21) 
+0x210f;:0;MOV	%RAX,%RDI;(21) 
+0x2112;:0;CALL	10d0 <fopen@plt>;(21) 
+0x2117;:0;MOV	%RAX,-0x18(%RBP);(21) 
+0x211b;:0;CMPQ	$0,-0x18(%RBP);(21) 
+0x2120;:0;JNE	2133 <createWandRFile+0x116>;(21) 
+0x2122;:0;LEA	0xef0(%RIP),%RAX;
+0x2129;:0;MOV	%RAX,%RDI;
+0x212c;:0;CALL	10e0 <perror@plt>;
+0x2131;:0;JMP	2190 <createWandRFile+0x173>;
+0x2133;:0;MOV	$0x8,%EDI;(21) 
+0x2138;:0;CALL	10b0 <malloc@plt>;(21) 
+0x213d;:0;MOV	%RAX,-0x20(%RBP);(21) 
+0x2141;:0;JMP	2158 <createWandRFile+0x13b>;(21) 
+0x2143;:0;MOV	-0x18(%RBP),%RDX;  (20) 
+0x2147;:0;MOV	-0x20(%RBP),%RAX;  (20) 
+0x214b;:0;MOV	$0x8,%ESI;  (20) 
+0x2150;:0;MOV	%RAX,%RDI;  (20) 
+0x2153;:0;CALL	1070 <fgets@plt>;  (20) 
+0x2158;:0;MOV	-0x18(%RBP),%RAX;  (20) 
+0x215c;:0;MOV	%RAX,%RDI;  (20) 
+0x215f;:0;CALL	1090 <feof@plt>;  (20) 
+0x2164;:0;TEST	%EAX,%EAX;  (20) 
+0x2166;:0;JE	2143 <createWandRFile+0x126>;  (20) 
+0x2168;:0;MOV	-0x20(%RBP),%RAX;(21) 
+0x216c;:0;MOV	%RAX,%RDI;(21) 
+0x216f;:0;CALL	1030 <free@plt>;(21) 
+0x2174;:0;MOV	-0x18(%RBP),%RAX;(21) 
+0x2178;:0;MOV	%RAX,%RDI;(21) 
+0x217b;:0;CALL	1050 <fclose@plt>;(21) 
+0x2180;:0;ADDL	$0x1,-0xc(%RBP);(21) 
+0x2184;:0;MOV	-0xc(%RBP),%EAX;(21) 
+0x2187;:0;CMP	-0x64(%RBP),%EAX;(21) 
+0x218a;:0;JLE	20e3 <createWandRFile+0xc6>;(21) 
+0x2190;:0;LEAVE;
+0x2191;:0;RET;

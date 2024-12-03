@@ -1,0 +1,61 @@
+address;source_location;insn;indent
+0x1961;:0;MOV	-0x10(%RBP),%RAX;
+0x1965;:0;MOV	%RAX,%RDI;
+0x1968;:0;CALL	1299 <removeFromQueue>;
+0x196d;:0;MOV	%EAX,-0x1c(%RBP);
+0x1970;:0;MOVL	$0,-0x8(%RBP);
+0x1977;:0;JMP	19ec <bfs+0x125>;
+0x1979;:0;MOV	-0x28(%RBP),%RAX;  (4) 
+0x197d;:0;MOV	0x18(%RAX),%RAX;  (4) 
+0x1981;:0;MOV	-0x1c(%RBP),%EDX;  (4) 
+0x1984;:0;MOVSXD	%EDX,%RDX;  (4) 
+0x1987;:0;SAL	$0x3,%RDX;  (4) 
+0x198b;:0;ADD	%RDX,%RAX;  (4) 
+0x198e;:0;MOV	(%RAX),%RAX;  (4) 
+0x1991;:0;MOV	-0x8(%RBP),%EDX;  (4) 
+0x1994;:0;MOVSXD	%EDX,%RDX;  (4) 
+0x1997;:0;SAL	$0x2,%RDX;  (4) 
+0x199b;:0;ADD	%RDX,%RAX;  (4) 
+0x199e;:0;MOV	(%RAX),%EAX;  (4) 
+0x19a0;:0;MOV	%EAX,-0x20(%RBP);  (4) 
+0x19a3;:0;MOV	-0x20(%RBP),%EAX;  (4) 
+0x19a6;:0;CLTQ;  (4) 
+0x19a8;:0;LEA	(,%RAX,4),%RDX;  (4) 
+0x19b0;:0;MOV	-0x18(%RBP),%RAX;  (4) 
+0x19b4;:0;ADD	%RDX,%RAX;  (4) 
+0x19b7;:0;MOV	(%RAX),%EAX;  (4) 
+0x19b9;:0;TEST	%EAX,%EAX;  (4) 
+0x19bb;:0;JNE	19e8 <bfs+0x121>;  (4) 
+0x19bd;:0;MOV	-0x20(%RBP),%EDX;  (4) 
+0x19c0;:0;MOV	-0x10(%RBP),%RAX;  (4) 
+0x19c4;:0;MOV	%EDX,%ESI;  (4) 
+0x19c6;:0;MOV	%RAX,%RDI;  (4) 
+0x19c9;:0;CALL	1264 <addToQueue>;  (4) 
+0x19ce;:0;MOV	-0x20(%RBP),%EAX;  (4) 
+0x19d1;:0;CLTQ;  (4) 
+0x19d3;:0;LEA	(,%RAX,4),%RDX;  (4) 
+0x19db;:0;MOV	-0x18(%RBP),%RAX;  (4) 
+0x19df;:0;ADD	%RDX,%RAX;  (4) 
+0x19e2;:0;MOVL	$0x1,(%RAX);  (4) 
+0x19e8;:0;ADDL	$0x1,-0x8(%RBP);  (4) 
+0x19ec;:0;MOV	-0x28(%RBP),%RAX;  (4) 
+0x19f0;:0;MOV	0x8(%RAX),%RAX;  (4) 
+0x19f4;:0;MOV	-0x1c(%RBP),%EDX;  (4) 
+0x19f7;:0;MOVSXD	%EDX,%RDX;  (4) 
+0x19fa;:0;SAL	$0x2,%RDX;  (4) 
+0x19fe;:0;ADD	%RDX,%RAX;  (4) 
+0x1a01;:0;MOV	(%RAX),%EAX;  (4) 
+0x1a03;:0;CMP	%EAX,-0x8(%RBP);  (4) 
+0x1a06;:0;JL	1979 <bfs+0xb2>;  (4) 
+0x1a0c;:0;MOV	-0x1c(%RBP),%EAX;
+0x1a0f;:0;CLTQ;
+0x1a11;:0;LEA	(,%RAX,4),%RDX;
+0x1a19;:0;MOV	-0x18(%RBP),%RAX;
+0x1a1d;:0;ADD	%RDX,%RAX;
+0x1a20;:0;MOVL	$0x2,(%RAX);
+0x1a26;:0;MOV	-0x10(%RBP),%RAX;
+0x1a2a;:0;MOV	%RAX,%RDI;
+0x1a2d;:0;CALL	124e <isEmpty>;
+0x1a32;:0;XOR	$0x1,%EAX;
+0x1a35;:0;TEST	%AL,%AL;
+0x1a37;:0;JNE	1961 <bfs+0x9a>;

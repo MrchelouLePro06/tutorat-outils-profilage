@@ -1,0 +1,4 @@
+name;time_p;time_s;cpi_ratio;
+/home/mehdi/tutorat/maqao_2024-11-22_13-27-07/binaries/benchmark;73.68;107.62;;
+/usr/lib/x86_64-linux-gnu/libc.so.6;26.27;38.37;;
+kernel;0.05;0.07;;

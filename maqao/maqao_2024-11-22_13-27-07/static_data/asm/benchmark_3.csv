@@ -1,0 +1,12 @@
+address;source_location;insn;indent
+0x1908;:0;MOV	-0x4(%RBP),%EAX;
+0x190b;:0;CLTQ;
+0x190d;:0;LEA	(,%RAX,4),%RDX;
+0x1915;:0;MOV	-0x18(%RBP),%RAX;
+0x1919;:0;ADD	%RDX,%RAX;
+0x191c;:0;MOVL	$0,(%RAX);
+0x1922;:0;ADDL	$0x1,-0x4(%RBP);
+0x1926;:0;MOV	-0x28(%RBP),%RAX;
+0x192a;:0;MOV	(%RAX),%EAX;
+0x192c;:0;CMP	%EAX,-0x4(%RBP);
+0x192f;:0;JL	1908 <bfs+0x41>;

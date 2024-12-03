@@ -1,0 +1,8 @@
+group_size;pattern;opcodes;offsets;addresses;stride_status;stride;memory_status;accessed_memory;accessed_memory_nooverlap;accessed_memory_overlap;span;head;unroll_factor;
+1;L;MOV,;0,;0x1a01,;Not mono block loop;0;Success;4;4;0;4;0;1;
+1;L;MOV,;0,;0x199e,;Not mono block loop;0;Success;4;4;0;4;0;1;
+1;L;MOV,;0,;0x198e,;Not mono block loop;0;Success;8;8;0;8;0;1;
+1;S;MOV,;0,;0x19e2,;Not mono block loop;0;Success;4;4;0;4;0;1;
+1;L;MOV,;0,;0x19b7,;Not mono block loop;0;Success;4;4;0;4;0;1;
+2;LL;MOV,MOV,;8,24,;0x19f0,0x197d,;Not mono block loop;0;Success;16;16;0;24;0;2;
+14;LLLLLLSLLLLLLS;MOV,MOV,CMP,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOV,ADD,;-40,-28,-8,-40,-28,-8,-32,-32,-24,-32,-16,-32,-24,-8,;0x19ec,0x19f4,0x1a03,0x1979,0x1981,0x1991,0x19a0,0x19a3,0x19b0,0x19bd,0x19c0,0x19ce,0x19db,0x19e8,;Not mono block loop;0;Success;76;36;40;36;0;1;
